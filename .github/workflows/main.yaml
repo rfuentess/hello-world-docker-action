@@ -5,6 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+    - name: checkout the PR
+      uses: actions/checkout@v2
+      with:
+        repository: ${{ github.repository }}
+        token: '${{ secrets.GITHUB_TOKEN }}'
+        ref: ${{ github.event.pull_request.head.sha }}
+        path: 'main'
+        submodules: 'true'
+
     - name: Hello world action step
       id: hello
       uses: ./.github/
