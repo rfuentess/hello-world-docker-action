@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-    # - name: checkout the PR
-    #   uses: actions/checkout@v2
+    - name: checkout the PR
+      uses: actions/checkout@v2
     #   with:
     #     repository: ${{ github.repository }}
     #     token: '${{ secrets.GITHUB_TOKEN }}'
