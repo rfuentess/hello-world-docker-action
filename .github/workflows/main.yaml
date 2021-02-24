@@ -2,7 +2,7 @@ on: [push]
 
 jobs:
   hello_world_job:
-    runs-on: ubuntu:20.04
+    runs-on: ubuntu:20.4
     name: A job to say hello
     steps:
     - name: checkout the PR
