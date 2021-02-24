@@ -15,7 +15,7 @@ jobs:
     #     submodules: 'true'
 
     - name: Hello world action step
-      id: Hello World
+      id: Hello_World
       uses: ./.github/actions/
       with:
         who-to-greet: 'Mona the Octocat'
